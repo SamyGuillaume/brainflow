@@ -51,16 +51,6 @@ services:
         fromDatabase:
           name: n8n-db
           property: user
-  
-  - type: web
-    plan: free
-    runtime: image
-    name: gotenberg
-    image:
-      url: gotenberg/gotenberg:8
-    envVars:
-      - key: DISABLE_GOOGLE_CHROME
-        value: "0"
 
 databases:
   - name: n8n-db
